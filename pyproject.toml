@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling>=1.25,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "movo"
+version = "0.1.0"
+description = "Voice-to-prototype coding agent MVP"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "fastapi==0.141.1",
+  "httpx==0.28.1",
+  "pillow==12.3.0",
+  "python-dotenv==1.2.3",
+  "python-multipart==0.0.32",
+  "uvicorn==0.53.0",
+]
+
+[project.optional-dependencies]
+agent = [
+  "openhands-sdk==1.49.4",
+  "openhands-tools==1.49.4",
+  "openhands-workspace==1.49.2",
+  "openhands-agent-server==1.49.5",
+]
+voice = [
+  "pipecat-ai[funasr,webrtc,silero]==1.11.0",
+  "torch==2.14.0",
+  "kaldi-native-fbank==1.22.3",
+]
+dev = ["pytest==7.4.4"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["backend"]
+exclude = ["**/._*", "**/__pycache__/**"]

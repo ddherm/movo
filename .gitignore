@@ -1,0 +1,47 @@
+# Local credentials. Keep the shareable template.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.openhands-secret-key
+.npmrc
+
+# Local project state, uploads, databases, logs, and generated projects.
+data/
+projects/
+uploads/
+agent-state/
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+*.log
+logs/
+
+# Python and Node dependencies / build output.
+.venv
+.venv*/
+venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Editor / operating system metadata, including exFAT AppleDouble files.
+.DS_Store
+._*
+.idea/
+.vscode/
+
+# Private planning and device acceptance notes. Keep reproducible tests/.
+验收记录.md
+语音编程搭档-MVP需求文档.md
