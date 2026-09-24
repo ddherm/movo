@@ -8,7 +8,7 @@ Movo 是一个单用户、多项目的本机 MVP。它把需求讨论、方案�
 
 这个项目受到 Muse 的启发。AI 工具变化很快，与其等一个完整产品，不如先做出能运行的 MVP，验证“从想法到原型”的工作流是否真的能提升效率。
 
-语音对话会是日常使用 AI 的重要方式。豆包的电话功能让我觉得，持续对话比一问一答更自然；我想进一步把这种体验与 coding agent 深度耦合：用户可以边说边澄清需求、查看真实进度、回答开发中的问题，并在 Agent 说话时直接插话。9 月 24 日早上，我看到了 OpenAI 的 [Voice agents 文档](https://developers.openai.com/api/docs/guides/voice-agents)和 [GPT-Live 相关发布记录](https://developers.openai.com/api/docs/changelog)，这让我更确信该方向值得探索。Movo 当前使用的是自己组合的语音链路，**不依赖 OpenAI Voice agents 或 GPT-Live**。
+语音对话会是日常使用 AI 的重要方式。豆包的电话功能让我觉得，持续对话比一问一答更自然；我想进一步把这种体验与 coding agent 深度耦合：用户可以边说边澄清需求、查看真实进度、回答开发中的问题，并在 Agent 说话时直接插话，与agent讨论这个idea。9 月 24 日早上，我看到了 OpenAI 的 [Voice agents 文档](https://developers.openai.com/api/docs/guides/voice-agents)和 [GPT-Live 相关发布记录](https://developers.openai.com/api/docs/changelog)，这让我更确信该方向值得探索。Movo 当前使用的是自己组合的语音链路，**不依赖 OpenAI Voice agents 或 GPT-Live**。
 
 这仍是验证可行性的作品。它聚焦个人把想法变成前端原型的流程，没有把多用户权限、生产部署和任意软件项目自动交付纳入当前范围。
 
